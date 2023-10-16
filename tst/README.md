@@ -27,7 +27,7 @@ kubectl apply -f spark/manifest/svc.yml -n ai
 ```
 Deploy Spark
 ```bash
-kubectl apply -f spark/manifest/deploy -n ai
+kubectl apply -f spark/manifest/deploy.yml -n ai
 ```
 ## Step 3: Deploy Cassandra
 Create Persistent Volume (PV) and Persistent Volume Claim (PVC)
@@ -42,7 +42,7 @@ kubectl apply -f cassandra/manifest/svc.yml -n ai
 Deploy Cassandra
 
 ```bash
-kubectl apply -f cassandra/manifest/deploy -n ai
+kubectl apply -f cassandra/manifest/deploy.yml -n ai
 ```
 ## Step 4: Deploy Python Server
 Create Persistent Volume (PV) and Persistent Volume Claim (PVC)
@@ -52,7 +52,7 @@ kubectl apply -f python-server/manifest/pvc.yml -n ai
 ```
 Deploy Python Server
 ```bash
-kubectl apply -f python-server/manifest/deploy -n ai
+kubectl apply -f python-server/manifest/deploy.yml -n ai
 ```
 That's it! You've successfully deployed Spark, Cassandra, and the Python Server to your Kubernetes cluster in the "ai" namespace. You can access these services as needed.
 
